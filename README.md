@@ -10,6 +10,13 @@ This repository showcases the projects I've developed during my iOS Development 
    - The App is only UI.
    - Technologies: Swift, SwiftUI, SF Symbols 6.
    - Skills Learned: Layouts, Code Refactoring, @State.
+  
+2. [Feamework App](./FrameworksGrid)
+   - Not just a UI app, it takes the UI knowledge one step further.
+   - The list of all Apple Frameworks laid out in a Grid.
+   - A bit of use of UIKit into the SWiftUI by opening a safari view.
+   - Technologies: Swift, SwiftUI, UIKit, SafariServices.
+   - Skills Learned: Layouts, Code Refactoring, @State, @ObservableObject, @StateObject, @Binding, NavigationView, NavigationLink, MVVM Architecture.
 
 
 ## Skills Demonstrated
