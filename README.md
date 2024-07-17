@@ -1,7 +1,7 @@
-# iOS Development Learning Portfolio 🚀
+# iOS Development Portfolio 🚀
 
 ## Overview
-This repository showcases the projects I've developed during my iOS Development learning path. Each project demonstrates different aspects of iOS development, from basic UI design to complex data management and API integration.
+This repository showcases my projects during my iOS Development learning path. Each project demonstrates different aspects of iOS development, from basic UI design to complex data management and API integration.
 
 ## Projects
 
