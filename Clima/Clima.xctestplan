@@ -1,0 +1,27 @@
+{
+  "configurations" : [
+    {
+      "id" : "7938B658-2FF3-46A2-8568-C6E2DD1BA9D3",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "locationScenario" : {
+      "identifier" : "Mumbai, India",
+      "referenceType" : "built-in"
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Clima.xcodeproj",
+      "identifier" : "ADAA27AC231BBFAF00365194",
+      "name" : "Clima"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}

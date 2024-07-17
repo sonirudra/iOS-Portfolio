@@ -2,18 +2,24 @@
 //  WeatherManager.swift
 //  Clima
 //
-//  Created by DREAMWORLD on 12/07/24.
+//  Created by Rudra on 12/07/24.
 //  Copyright © 2024 App Brewery. All rights reserved.
 //
 
 import Foundation
 
+protocol WeatherManagerDelegate {
+    func didUpdateWeather(weatherData: WeatherModel)
+    func didFailedWithError(err: Error)
+}
+
 struct WeatherManager {
     private let baseUrl: String = "https://api.openweathermap.org/data/2.5/weather?appid=8a222435c559cee31f88f883baf5d568&units=metric"
     
+    var delegate: WeatherManagerDelegate?
+    
     public func fetchWeather(ofCity cityName: String) {
         let urlString = "\(baseUrl)&q=\(cityName)"
-//        print(urlString)
         performApiRequest(with: urlString)
     }
     
@@ -22,18 +28,19 @@ struct WeatherManager {
         // 1. Create a URL
         if let URL = URL(string: urlString) {
             // 2. Create a URL session
-            
             let session = URLSession(configuration: .default)
             
             // 3. Give session a task
             let task = session.dataTask(with: URL) { data, response, err in
                 if err != nil {
-                    print("error : \(err!)")
+                    delegate?.didFailedWithError(err: err!)
                     return
                 }
                 
                 if let safeData = data {
-                    self.parseResponse(weatherData: safeData)
+                    if let weather = self.parseResponse(weatherData: safeData) {
+                        delegate?.didUpdateWeather(weatherData: weather)
+                    }
                 }
             }
             
@@ -42,37 +49,22 @@ struct WeatherManager {
         }
     }
     
-    private func parseResponse(weatherData: Data) {
+    private func parseResponse(weatherData: Data) -> WeatherModel? {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(WeatherDataModal.self, from: weatherData)
-            let weatherImage = getImageFromId(id: decodedData.weather[0].id)
-            print(weatherImage)
+            let id: Int = decodedData.weather[0].id
+            let cityName: String = decodedData.name
+            let temp: Double = decodedData.main.temp
+            
+            let currentWeather: WeatherModel = WeatherModel(conditionId: id, cityName: cityName, tempurature: temp)
+            
+            return currentWeather
         } catch {
             print(error)
+            delegate?.didFailedWithError(err: error)
+            return nil
         }
         
     }
-    
-    private func getImageFromId(id: Int) -> String {
-        switch id {
-            case (200...232):
-                return "cloud.bolt.fill"
-            case (300...321):
-                return "cloud.rainbow.half.fill"
-            case (500...531):
-                return "cloud.rain.fill"
-            case (600...622):
-                return "snowflake.circle.fill"
-            case (700...781):
-                return "wind.snow.circle.fill"
-            case (800):
-                return "cloud.sun.rain.fill"
-            case (801...804):
-                return "cloud.fill"
-            default:
-                return "cloud.fill"
-        }
-    }
-
 }
