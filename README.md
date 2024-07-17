@@ -5,18 +5,25 @@ This repository showcases the projects I've developed during my iOS Development 
 
 ## Projects
 
-1. [Weather App](./SwiftUi-WeatherApp)
-   - A simple weather forecasting application to understand the SwiftUI and its fundamentals at 1st step.
-   - The App is only UI.
-   - Technologies: Swift, SwiftUI, SF Symbols 6.
-   - Skills Learned: Layouts, Code Refactoring, @State.
+1. [Weather App](./Clima)
+   - This app utilises the UIKit.
+   - A simple weather forecasting application to get the current weather data of the entered city name.
+   - # Technologies: Swift, UIKit, URLSessions, CoreLocation.
+   - # Skills Learned: Swift, Protocols & Delegates, extensions, Networking, Closures.
+   - ## Unfortunately the location was not working on the simulator when making this app.
   
-2. [Feamework App](./FrameworksGrid)
+2. [UI App](./SwiftUi-WeatherApp)
+   - An application to understand the SwiftUI and its fundamentals at 1st step.
+   - The App showcases only UI skills.
+   - # Technologies: Swift, SwiftUI, SF Symbols 6.
+   - # Skills Learned: Layouts, Code Refactoring, @State.
+  
+3. [Feamework App](./FrameworksGrid)
    - Not just a UI app, it takes the UI knowledge one step further.
    - The list of all Apple Frameworks laid out in a Grid.
    - A bit of use of UIKit into the SWiftUI by opening a safari view.
-   - Technologies: Swift, SwiftUI, UIKit, SafariServices.
-   - Skills Learned: Layouts, Code Refactoring, @State, @ObservableObject, @StateObject, @Binding, NavigationView, NavigationLink, MVVM Architecture.
+   - # Technologies: Swift, SwiftUI, UIKit, SafariServices.
+   - # Skills Learned: Layouts, Code Refactoring, @State, @ObservableObject, @StateObject, @Binding, NavigationView, NavigationLink.
 
 
 ## Skills Demonstrated
