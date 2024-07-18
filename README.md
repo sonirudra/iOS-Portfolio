@@ -18,7 +18,13 @@ This repository showcases my projects during my iOS Development learning path. E
    - Technologies: Swift, SwiftUI, SF Symbols 6.
    - Skills Learned: Layouts, Code Refactoring, @State.
   
-3. [Feamework App](./FrameworksGrid)
+3. [Bill Split App](./WeSplit)
+   - Getting along with SwiftUI
+   - This app is just for splitting the bill within the number of people.
+   - Technologies: Swift, SwiftUI, @State, NavigationStack, Picker.
+   - Skills Learned: Form, Picker, Segmented Picker, @State and two-way Binding, Computed Properties.
+  
+4. [Feamework App](./FrameworksGrid)
    - Not just a UI app, it takes the UI knowledge one step further.
    - The list of all Apple Frameworks laid out in a Grid.
    - A bit of use of UIKit into the SWiftUI by opening a safari view.
@@ -40,11 +46,12 @@ This repository showcases my projects during my iOS Development learning path. E
 ## How to Use This Repository
 
 1. Browse the project directories to view individual projects.
-2. Clone the repository to explore the code locally.
+2. Each directory represents a different project and contains a Readme to show the project details and video of the Result.
+3. Clone the repository to explore the code locally.
 
 ## About Me
 
-I'm Rudra Soni, a 23-year-old developer from Surat, India, with a passion for mobile app development. With 2.5 years of professional experience in React Native, I've honed my skills in creating cross-platform mobile applications.
+I'm Rudra Soni, a 23-year-old developer from Surat, India, passionate about mobile app development. With 2.5 years of professional experience in React Native, I've honed my skills in creating cross-platform mobile applications.
 
 Now, I'm excited to be transitioning into native iOS development. This portfolio represents my journey into the Apple ecosystem, showcasing the projects I've built while learning Swift and iOS frameworks. My background in React Native provides me with a unique perspective on mobile development, which I'm leveraging to quickly adapt to iOS-specific concepts and best practices.
 
