@@ -4,7 +4,7 @@
 Guess The Flag 🚩 is an iOS app I developed to enhance my SwiftUI skills. It challenges users to identify country flags from multiple choices while tracking their score, featuring a clean and engaging interface.
 
 - Objective: Showcase my SwiftUI skills by creating an engaging iOS flag identification game with score tracking.
-- Features: Clean design, Alerts, Endless questions.
+- Features: Clean design, Alerts, Endless questions, Gradients.
 - Technologies: Swift, SwiftUI, @State, @ObservableObject & @ObservedObject, @Binding.
 - Skills Learned: Swift Array, SwiftUI, Code Structuring (MVVM).
 
