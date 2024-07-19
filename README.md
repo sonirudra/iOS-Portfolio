@@ -24,7 +24,13 @@ This repository showcases my projects during my iOS Development learning path. E
    - Technologies: Swift, SwiftUI, @State, NavigationStack, Picker.
    - Skills Learned: Form, Picker, Segmented Picker, @State and two-way Binding, Computed Properties.
   
-4. [Feamework App](./FrameworksGrid)
+4. [Guessing Game](./GuessGame)
+   - Practicing the concepts of Swift and SwiftUI.
+   - This is a simple guessing game of the Flags for the given Country.
+   - Technologies: Swift, SwiftUI, Alert.
+   - Skills Learned: Layouts (H/V/ZStacks), Alerts, Swift Array operations, @State, @observedObject & @ObservableObject, @Binding, MVVM.
+  
+5. [Feamework App](./FrameworksGrid)
    - Not just a UI app, it takes the UI knowledge one step further.
    - The list of all Apple Frameworks laid out in a Grid.
    - A bit of use of UIKit into the SWiftUI by opening a safari view.
